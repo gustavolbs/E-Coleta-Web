@@ -125,6 +125,20 @@
   margin-left: 24px;
 }
 
+@media screen and (max-width: 599px) {
+  #page-create-point form .field-group {
+    flex-direction: column;
+  }
+
+  #page-create-point form .field-group .field + .field {
+    margin-left: 0;
+  }
+
+  #page-create-point form .field-group input + input {
+    margin-left: 0;
+  }
+}
+
 #page-create-point form .field-check {
   flex-direction: row;
   align-items: center;
@@ -169,6 +183,12 @@
   grid-template-columns: repeat(3, 1fr);
   gap: 16px;
   list-style: none;
+}
+
+@media screen and (max-width: 599px) {
+  .items-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 .items-grid li {
